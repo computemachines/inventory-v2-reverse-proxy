@@ -10,6 +10,7 @@ COPY start_nginx.sh /bin/
 
 RUN mkdir -pv /run/nginx
 
-
-CMD ["sh", "/bin/start_nginx.sh"]
+# CMD ["nginx", "-g", "daemon off;"]
+CMD nginx ; tail -f /dev/null
+# CMD ["sh", "/bin/start_nginx.sh"]
 

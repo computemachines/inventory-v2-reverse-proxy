@@ -4,8 +4,8 @@
 # mkdir -pv /etc/ssl/acme/computemachines.com/
 # /root/.acme.sh/acme.sh --installcert -d computemachines.com \
 # 		       --keypath /etc/ssl/acme/computemachines.com/privkey.key --fullchainpath /etc/ssl/acme/computemachines.com/fullchain.cer
-# nginx -g 'daemon off;'
-touch /var/log/nginx/error.log
-touch /var/log/nginx/access.log
-nginx
-tail -f /var/log/nginx/error.log
+nginx -g 'daemon off;'
+# touch /var/log/nginx/error.log
+# touch /var/log/nginx/access.log
+# nginx
+# tail -f /var/log/nginx/error.log
