@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk update && apk add nginx bash curl openssl ca-certificates acme-client libressl git socat
+RUN apk update && apk add nginx bash curl openssl ca-certificates libressl
 RUN openssl dhparam -dsaparam -out /etc/ssl/certs/dhparam.pem 4096
 
 RUN rm -v /etc/nginx/conf.d/default.conf
